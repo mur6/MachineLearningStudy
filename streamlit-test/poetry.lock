@@ -1041,10 +1041,25 @@ python-versions = "*"
 [package.dependencies]
 notebook = ">=4.4.1"
 
+[[package]]
+name = "yellowbrick"
+version = "1.2"
+description = "A suite of visual analysis and diagnostic tools for machine learning."
+category = "main"
+optional = false
+python-versions = ">=3.4, <4"
+
+[package.dependencies]
+cycler = ">=0.10.0"
+matplotlib = ">=2.0.2,<3.0.0 || >3.0.0"
+numpy = ">=1.13.0"
+scikit-learn = ">=0.20"
+scipy = ">=1.0.0"
+
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "d433738590d0b359afc4f4c06bf1b58056fbd9fc265666afa67b7f666a9a7b22"
+content-hash = "ce1e84c8a3ef7d39434fa1c2767af95b2f5789070bf4dfe465c9c27db52e3cae"
 
 [metadata.files]
 altair = [
@@ -1757,4 +1772,9 @@ webencodings = [
 widgetsnbextension = [
     {file = "widgetsnbextension-3.5.1-py2.py3-none-any.whl", hash = "sha256:bd314f8ceb488571a5ffea6cc5b9fc6cba0adaf88a9d2386b93a489751938bcd"},
     {file = "widgetsnbextension-3.5.1.tar.gz", hash = "sha256:079f87d87270bce047512400efd70238820751a11d2d8cb137a5a5bdbaf255c7"},
+]
+yellowbrick = [
+    {file = "yellowbrick-1.2-py2-none-any.whl", hash = "sha256:4bd29df714cae0e09de0d7e070db169410437d2bc110e10a1c1376d6fcc074f4"},
+    {file = "yellowbrick-1.2-py3-none-any.whl", hash = "sha256:5268168df9dcb6cbcd66a1061689295ad39eb30372bee7b7cc0728e61cc715f0"},
+    {file = "yellowbrick-1.2.tar.gz", hash = "sha256:380b9775c9ad1880be55fab697a5d694823f9bc972bd7c2108553a11c7c8f252"},
 ]
