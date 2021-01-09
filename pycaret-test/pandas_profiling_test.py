@@ -7,6 +7,8 @@ from sklearn import datasets
 data = datasets.load_boston()
 # %%
 df = pd.DataFrame(data.data, columns=data.feature_names)
+df["MEDV"] = data.target
+
 # %%
 profile = pdp.ProfileReport(df)
 # %%
